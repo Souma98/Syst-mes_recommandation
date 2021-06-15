@@ -2,6 +2,7 @@
   "name": "tailwind",
   "version": "1.1.0",
   "private": true,
+  "proxy" : "http://127.0.0.1:5000/",
   "dependencies": {
     "@ant-design/charts": "^1.1.4",
     "@craco/craco": "^6.1.2",
@@ -22,6 +23,7 @@
     "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.output.css",
     "prestart": "yarn run build:tailwind",
     "prebuild": "yarn run build:tailwind",
+    "start-api" : "cd API && environnement/Lib/flask run --no-debugger ",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
